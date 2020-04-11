@@ -1,0 +1,51 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
+  "diagnostic.hintSign": "__",
+  "diagnostic.infoSign": "..",
+  "diagnostic.warningSign": "__",
+  "eslint.autoFixOnSave": true,
+  "git.changeRemovedSign.text": "=",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    },
+    "haskell": {
+      "command": "hie-wrapper",
+      "rootPatterns": [
+        ".stack.yaml",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {}
+      }
+    }
+  },
+  "prettier.bracketSpacing": false,
+  "prettier.eslintIntegration": true,
+  "prettier.printWidth": 99,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "es5",
+  "python.analysis.diagnosticEnabled": false,
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": ["--style={based_on_style: pep8, column_limit: 99}"],
+  "python.formatting.yapfPath": "/usr/local/bin/yapf",
+  "python.jediEnabled": true,
+  "python.jediPath": "/usr/local/lib/python3.7/site-packages",
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=99"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/usr/local/bin/flake8",
+  "python.linting.pylintEnabled": false,
+  "python.pipenvPath": "/usr/local/bin/pipenv",
+  "yank.highlight.duration": 200,
+  "vetur.dev.vlsPath": "/usr/local/Cellar/node/13.8.0/lib/node_modules/vue-language-server"
+}
