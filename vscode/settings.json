@@ -1,0 +1,403 @@
+{
+  "bookmarks.navigateThroughAllFiles": true,
+  "bookmarks.saveBookmarksInProject": true,
+  "breadcrumbs.enabled": false,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python3",
+    "perl": "perl",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "stack runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.colorDecorators": false,
+  "editor.cursorBlinking": "phase",
+  "editor.fontFamily": "JetBrains Mono, Iosevka SS10, Space Mono, ApercuPro-Mono, Input Mono Compressed, 'Cascadia Code PL', 'Droid Sans Mono', PragmataPro Liga, Space Mono, ApercuPro-Mono, mononoki, Bergen Mono, BPmono, Cartograph Mono CF, monospace",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.localityBonus": true,
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "scope": [
+  //         "comment",
+  //         "comment.block",
+  //         "comment.block.documentation",
+  //         "comment.line",
+  //         "constant",
+  //         "constant.character",
+  //         "constant.character.escape",
+  //         "constant.numeric",
+  //         "constant.numeric.integer",
+  //         "constant.numeric.float",
+  //         "constant.numeric.hex",
+  //         "constant.numeric.octal",
+  //         "constant.other",
+  //         "constant.regexp",
+  //         "constant.rgb-value",
+  //         "emphasis",
+  //         "entity",
+  //         "entity.name",
+  //         "entity.name.class",
+  //         "entity.name.function",
+  //         "entity.name.method",
+  //         "entity.name.section",
+  //         "entity.name.selector",
+  //         "entity.name.tag",
+  //         "entity.name.type",
+  //         "entity.other",
+  //         "entity.other.attribute-name",
+  //         "entity.other.inherited-class",
+  //         "invalid",
+  //         "invalid.deprecated",
+  //         "invalid.illegal",
+  //         "keyword",
+  //         "keyword.control",
+  //         "keyword.operator",
+  //         "keyword.operator.new",
+  //         "keyword.operator.assignment",
+  //         "keyword.operator.arithmetic",
+  //         "keyword.operator.logical",
+  //         "keyword.other",
+  //         "markup",
+  //         "markup.bold",
+  //         "markup.changed",
+  //         "markup.deleted",
+  //         "markup.heading",
+  //         "markup.inline.raw",
+  //         "markup.inserted",
+  //         "markup.italic",
+  //         "markup.list",
+  //         "markup.list.numbered",
+  //         "markup.list.unnumbered",
+  //         "markup.other",
+  //         "markup.quote",
+  //         "markup.raw",
+  //         "markup.underline",
+  //         "markup.underline.link",
+  //         "meta",
+  //         "meta.block",
+  //         "meta.cast",
+  //         "meta.class",
+  //         "meta.function",
+  //         "meta.function-call",
+  //         "meta.preprocessor",
+  //         "meta.return-type",
+  //         "meta.selector",
+  //         "meta.tag",
+  //         "meta.type.annotation",
+  //         "meta.type",
+  //         "punctuation.definition.string.begin",
+  //         "punctuation.definition.string.end",
+  //         "punctuation.separator",
+  //         "punctuation.separator.continuation",
+  //         "punctuation.terminator",
+  //         "storage",
+  //         "storage.modifier",
+  //         "storage.type",
+  //         "string",
+  //         "string.interpolated",
+  //         "string.other",
+  //         "string.quoted",
+  //         "string.quoted.double",
+  //         "string.quoted.other",
+  //         "string.quoted.single",
+  //         "string.quoted.triple",
+  //         "string.regexp",
+  //         "string.unquoted",
+  //         "strong",
+  //         "support",
+  //         "support.class",
+  //         "support.constant",
+  //         "support.function",
+  //         "support.other",
+  //         "support.type",
+  //         "support.type.property-name",
+  //         "support.variable",
+  //         "variable",
+  //         "variable.language",
+  //         "variable.name",
+  //         "variable.other",
+  //         "variable.other.readwrite",
+  //         "variable.parameter"
+  //       ],
+  //       "settings": {
+  //         "fontStyle": ""
+  //       }
+  //     }
+  //   ]
+  // },
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {
+    "extensions": [
+      ".html",
+      ".js",
+      ".vue",
+      ".jsx"
+    ]
+  },
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 200,
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "sass"
+  },
+  "explorer.confirmDelete": false,
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 200,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "gitlens.currentLine.scrollable": false,
+  "haskell.hlint.executablePath": "hlint",
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "**/_gsdata_": true,
+    "**/.next": true
+  },
+  "search.runInExtensionHost": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.shell.windows": "",
+  "vim.autoindent": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "'Cascadia Code PL'",
+  "vim.easymotionMarkerForegroundColorOneChar": "#fff",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#fff",
+  "vim.easymotionMarkerHeight": 24,
+  "vim.easymotionMarkerWidthPerChar": 10,
+  "vim.easymotionMarkerYOffset": 4,
+  "vim.foldfix": true,
+  "vim.history": 200,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "bookmarks.listFromAllFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "code-runner.run"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "z"
+      ],
+      "commands": [
+        "workbench.action.toggleZenMode"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "vim.visualstar": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.letterSpacing": 1,
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.feedback.visible": false,
+  "terminal.integrated.fontSize": 14,
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "html.format.indentHandlebars": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "editor.formatOnSave": true,
+  "eslint.packageManager": "pnpm",
+  "editor.tabSize": 2,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "git.confirmSync": false,
+  "editor.lineHeight": 24,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.sortOrder": "type",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // "workbench.colorCustomizations": {
+  //   "activityBarBadge.background": "#2979FF",
+  //   "breadcrumb.activeSelectionForeground": "#2979FF",
+  //   "editorSuggestWidget.highlightForeground": "#2979FF",
+  //   "editorWidget.border": "#2979FF",
+  //   "editorWidget.resizeBorder": "#2979FF",
+  //   "list.activeSelectionForeground": "#2979FF",
+  //   "list.highlightForeground": "#2979FF",
+  //   "list.inactiveSelectionForeground": "#2979FF",
+  //   "menu.selectionForeground": "#2979FF",
+  //   "menubar.selectionForeground": "#2979FF",
+  //   "notificationLink.foreground": "#2979FF",
+  //   "panelTitle.activeBorder": "#2979FF",
+  //   "pickerGroup.foreground": "#2979FF",
+  //   "progressBar.background": "#2979FF",
+  //   "scrollbarSlider.activeBackground": "#2979FF50",
+  //   "settings.headerForeground": "#2979FF",
+  //   "settings.modifiedItemIndicator": "#2979FF",
+  //   // "tab.activeBorder": "#2979FF",
+  //   "textLink.foreground": "#2979FF",
+  //   // "window.activeBorder": "#2979FF"
+  // },
+  "materialTheme.accent": "Blue",
+  "editor.scrollBeyondLastLine": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "javascript.format.enable": false,
+  "prettier.bracketSpacing": false,
+  "html.format.endWithNewline": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.bracesSpacing": false,
+  "eslint.autoFixOnSave": true,
+  "scm.defaultViewMode": "tree",
+  "files.insertFinalNewline": true,
+  "vim.enableNeovim": true,
+  "editor.minimap.showSlider": "always",
+  "workbench.iconTheme": "chalice-icon-theme",
+  "prettier.printWidth": 100,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "code-runner.runInTerminal": true,
+  "workbench.activityBar.visible": true,
+  "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
+  "haskellShell.ghci.executablePath": "'stack ghci'",
+  "terminal.integrated.lineHeight": 1.1,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.colorTheme": "One Monokai 80s Plus",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.fontSize": 14,
+  "terminal.integrated.fontWeightBold": "normal",
+  "editor.renderIndentGuides": false
+}
